@@ -1,0 +1,20 @@
+{
+  "files": {
+    "templates/idea.html": [
+      {
+        "id": "71e6acd1-1018-4e4a-b364-73287a00712c",
+        "line": 4,
+        "version": 252,
+        "index": 36
+      }
+    ],
+    "templates/login.html": [
+      {
+        "id": "a0d1b6ff-f75f-4633-978f-f1eeca7807b9",
+        "line": 1,
+        "version": 247,
+        "index": 0
+      }
+    ]
+  }
+}
