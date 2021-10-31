@@ -1,5 +1,13 @@
 {
   "files": {
+    "$ pip freeze \u003e requirements.txt": [
+      {
+        "id": "2330eaf9-0bbf-4923-a2b8-0cdb63047eec",
+        "line": 10,
+        "version": 0,
+        "index": 144
+      }
+    ],
     "templates/idea.html": [
       {
         "id": "71e6acd1-1018-4e4a-b364-73287a00712c",
