@@ -2,8 +2,14 @@
   <head>
     <title></title>
 
-    <link rel="stylesheet" href="style.css">
-
+     <link rel="stylesheet" href="{{ url_for('static', filename='idea.css') }}">
+    <style>
+      body{
+        background-color: #3C7CD3
+      }
+    </style>
+  </head>
+  <body>
   </head>
   <body>
 
@@ -13,14 +19,90 @@
 		<input type="submit" name="submit"/>
 		</form>
 
-		
+
+<div id="background-wrap">
+  {% for item in idea %}
+  {% if loop.index % 5 == 0 %}
+    <div class="x1">
+        <div class="cloud">
+          <span class="cloud-text"> 
+            Idea: {{item.wyi}} 
+          </span>
+        </div>
+    </div>
+
+    {% endif %}
+
+  {% if loop.index % 5 == 1 %}
+    <div class="x2">
+        <div class="cloud">
+          <span class="cloud-text"> 
+            Thought: {{item.idea}} 
+          </span>
+        </div>
+    </div>
+      {% endif %}
+
+  {% if loop.index % 5 == 2 %}
+    <div class="x3">
+        <div class="cloud">
+          <span class="cloud-text"> 
+            Idea: {{item.idea}} 
+          </span>
+        </div>
+    </div>
+        {% endif %}
+
+    {% if loop.index % 5 == 3 %}
+    <div class="x4">
+        <div class="cloud">
+          <span class="cloud-text"> 
+            Idea: {{item.idea}} 
+          </span>
+        </div>
+    </div>
+      {% endif %}
+
+    {% if loop.index % 5 == 4 %}
+    <div class="x5">
+        <div class="cloud">
+           <span class="cloud-text"> 
+            Idea: {{item.idea}} 
+          </span>
+        </div>
+    </div>
+    {% endif%} 
+
+
+  {% endfor %}
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
   </body>
 
-<style>
-    body{
-        background: blue;
-    }
-    </style>
+
 
 </html>

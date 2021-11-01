@@ -31,6 +31,8 @@ def login():
                 print("succ logged")
                 return render_template('idea.html')
 
+        
+
 
 
 @app.route('/singup', methods = ['GET', 'POST'])
@@ -57,14 +59,9 @@ def idea():
     elif request.method == 'POST':
         wyi = request.form['wyi']
         add_idea(wyi)
-        return render_template('z.html')
+        return render_template('idea.html')
 
-@app.route('/z')
-def z():
-    global logged_user
-    print('in z')
-    ideas = search_idea(logged_user.username)
-    return render_template('z.html', ideas = ideas)
+
 
 
 
