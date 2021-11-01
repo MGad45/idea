@@ -15,19 +15,19 @@
 <div class="login">
   <div class="heading">
     <h2>Log in</h2>
-    <form action="/login">
+    <form action="/login" method="post">
 
       <div class="input-group input-group-lg">
         <span class="input-group-addon"><i class="fa fa-user"></i></span>
-        <input type="text" class="form-control" placeholder="Username or email">
+        <input type="text" class="form-control" placeholder="Username" name="username">
           </div>
 
         <div class="input-group input-group-lg">
           <span class="input-group-addon"><i class="fa fa-lock"></i></span>
-          <input type="password" class="form-control" placeholder="Password">
+          <input type="password" class="form-control" placeholder="Password" name="password">
         </div>
 
-        <button type="submit" class="float">Login</button>
+        <button type="submit" class="float">Log in</button>
        </form>
  		</div>
  </div>
