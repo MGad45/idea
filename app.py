@@ -47,7 +47,7 @@ def singup():
     if not user_exists:
         add_user(username, password)
         print("succ made a user")
-        return render_template('login.html')
+        return render_template('idea.html')
 
         
 
