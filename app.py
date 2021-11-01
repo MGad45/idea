@@ -43,11 +43,11 @@ def singup():
     elif request.method == 'POST':
         username = request.form['username']
         password = request.form['password']
-    user_exists = search_user(username=username)
-    if not user_exists:
-        add_user(username, password)
-        print("succ made a user")
-        return render_template('idea.html')
+        user_exists = search_user(username=username)
+        if not user_exists:
+          add_user(username, password)
+          print("succ made a user")
+          return render_template('idea.html')
 
         
 
